@@ -6,7 +6,7 @@ class Person{
     this.interests = interests;
     this.getInfo = function() {
       let last = this.interests.pop();
-      return `Hello, my name is ${this.name} and I am ${this.age} years old. My interests are ${this.interests} and ` +last;
+      return `Hello, my name is ${this.name} and I am a ${this.age} year old ${this.gender}. My interests are ${this.interests} and `+last;
     };
   }
 
@@ -14,8 +14,3 @@ class Person{
     return this.getInfo();
   }
 }
-
-let person = new Person("Ryan", 30, "male", ["being a hardarse", "agile", "ssd hard drives"])
-let greeting = person.hello();
-
-console.log(greeting);
